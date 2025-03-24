@@ -2,18 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <!-- <key>NSBluetoothAlwaysUsageDescription</key>
-    <string>Ứng dụng cần quyền Bluetooth để kết nối với thiết bị</string>
-    <key>NSBluetoothPeripheralUsageDescription</key>
-    <string>Ứng dụng cần quyền Bluetooth để kết nối với thiết bị</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>Ứng dụng cần quyền truy cập vị trí để quét thiết bị Bluetooth</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Ứng dụng cần quyền truy cập vị trí để quét thiết bị Bluetooth</string>
-    <array>
-        <string>bluetooth-central</string>
-        <string>bluetooth-peripheral</string>
-    </array> -->
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -36,6 +24,17 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<!-- Thêm các key Bluetooth và Location ở đây -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>bluetooth-central</string>
+        <string>bluetooth-peripheral</string>
+    </array>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Ứng dụng cần quyền Bluetooth để kết nối với thiết bị</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Ứng dụng cần quyền vị trí để quét Bluetooth</string>
+    <!-- Kết thúc phần thêm -->
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
